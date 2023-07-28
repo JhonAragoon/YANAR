@@ -3,14 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Página de Inicio de Sesión</title>
+  <title>Página de Inicio de Sesión y Registro</title>
   <link rel="stylesheet" href="styles.css">
-  <style>
-    body {
-      background-image: url("images/fondo.jpg");
-      background-size: cover;
-    }
-  </style>
 </head>
 <body>
   <div class="container">
@@ -19,7 +13,7 @@
     </div>
     <div class="login-form">
       <h1>Iniciar Sesión</h1>
-      <form action="procesar_login.php" method="POST">
+      <form>
         <div class="form-group">
           <label for="username">Nombre de Usuario</label>
           <input type="text" id="username" name="username" required>
@@ -30,13 +24,20 @@
         </div>
         <button type="submit">Iniciar Sesión</button>
       </form>
+      <div class="link-register">
+        <a href="#" onclick="showRegisterForm()">Registrarse</a>
+      </div>
     </div>
     <div class="register-form">
-      <h1>Crear una cuenta</h1>
-      <form action="procesar_registro.php" method="POST">
+      <h1>Registrarse</h1>
+      <form>
         <div class="form-group">
           <label for="new-username">Nombre de Usuario</label>
           <input type="text" id="new-username" name="new-username" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Correo Electrónico</label>
+          <input type="email" id="email" name="email" required>
         </div>
         <div class="form-group">
           <label for="new-password">Contraseña</label>
@@ -44,7 +45,36 @@
         </div>
         <button type="submit">Registrarse</button>
       </form>
+      <div class="link-login">
+        <a href="#" onclick="showLoginForm()">Volver a Iniciar Sesión</a>
+      </div>
     </div>
   </div>
+
+  <script>
+    function showRegisterForm() {
+      var loginForm = document.querySelector('.login-form');
+      var registerForm = document.querySelector('.register-form');
+      var linkRegister = document.querySelector('.link-register');
+      var linkLogin = document.querySelector('.link-login');
+
+      loginForm.style.display = 'none';
+      registerForm.style.display = 'block';
+      linkRegister.style.display = 'none';
+      linkLogin.style.display = 'block';
+    }
+
+    function showLoginForm() {
+      var loginForm = document.querySelector('.login-form');
+      var registerForm = document.querySelector('.register-form');
+      var linkRegister = document.querySelector('.link-register');
+      var linkLogin = document.querySelector('.link-login');
+
+      loginForm.style.display = 'block';
+      registerForm.style.display = 'none';
+      linkRegister.style.display = 'block';
+      linkLogin.style.display = 'none';
+    }
+  </script>
 </body>
 </html>
