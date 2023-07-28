@@ -13,17 +13,9 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <script>
-    // Variable para detectar si es dispositivo móvil
-    var isMobile = window.innerWidth <= 768;
-
-    // Lógica para adaptar el diseño según el tipo de dispositivo
-    if (isMobile) {
-      document.write('<h1 style="color: white;">¡Bienvenido a la versión móvil!</h1>');
-    } else {
-      document.write('<h1 style="color: white;">¡Bienvenido a la versión de escritorio!</h1>');
-    }
-  </script>
+  <div id="welcome-message">
+    <h1 style="color: white;">¡Bienvenido!</h1>
+  </div>
 
   <div class="container">
     <div class="logo">
@@ -40,6 +32,16 @@
       </div>
     </div>
   </div>
+
+  <script>
+    // Variable para detectar si es dispositivo móvil
+    var isMobile = window.innerWidth <= 768;
+
+    // Lógica para adaptar el diseño según el tipo de dispositivo
+    if (isMobile) {
+      document.getElementById('welcome-message').style.display = 'block';
+    }
+  </script>
 
   <script>
     // Resto del JavaScript
