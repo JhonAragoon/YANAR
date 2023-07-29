@@ -10,12 +10,14 @@ body {
   align-items: center;
   height: 100vh;
 }
+
 .container {
   background-color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   padding: 20px;
   width: 360px;
+  margin: 0 auto; /* Ajustar el recuadro al centro horizontalmente */
 }
 
 .logo {
