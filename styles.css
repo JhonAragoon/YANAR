@@ -17,7 +17,9 @@ body {
   border-radius: 8px;
   padding: 20px;
   width: 360px;
-  margin: 0 auto; /* Ajustar el recuadro al centro horizontalmente */
+  max-width: 100%; /* Para asegurarse de que el contenedor no sea más ancho que la pantalla */
+  margin: auto; /* Centrar horizontalmente y ajustar verticalmente */
+  margin-top: 30px; /* Espacio adicional para centrar verticalmente */
 }
 
 .logo {
