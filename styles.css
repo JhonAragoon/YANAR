@@ -50,6 +50,7 @@ h1 {
   margin-bottom: 20px;
   font-size: 28px;
   font-weight: bold;
+  text-align: center;
 }
 
 .form-group {
@@ -94,6 +95,7 @@ button:hover {
   text-align: center;
   margin-bottom: 10px;
 }
+
 .link-register a, .link-login a {
   color: #007BFF;
   text-decoration: underline;
