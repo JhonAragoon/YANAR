@@ -17,14 +17,14 @@ body {
   border-radius: 8px;
   padding: 20px;
   width: 360px;
+  max-width: 100%; /* Para asegurarse de que el contenedor no sea más ancho que la pantalla */
+  margin: auto; /* Centrar horizontalmente y ajustar verticalmente */
+  margin-top: 30px; /* Espacio adicional para centrar verticalmente */
 }
 
 .logo {
   text-align: center;
   margin-bottom: 20px;
-  background-color: rgba(255, 255, 255, 0.7); /* Añade un fondo transparente al recuadro del logo */
-  border-radius: 8px; /* Agrega borde redondeado */
-  padding: 20px; /* Aumenta el espacio interno */
 }
 
 .logo img {
