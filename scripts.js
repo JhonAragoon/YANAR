@@ -5,7 +5,7 @@ function simulateLogin() {
   var password = passwordInput.value;
 
   // Simulación de verificación de credenciales
-  if (username === 'hola' && password === '123') {
+  if (username === 'usuario' && password === 'contraseña') {
     alert('Inicio de sesión exitoso.');
     // Redirigir al usuario a la página "inicio.html" después del inicio de sesión exitoso
     window.location.href = 'inicio.html';
