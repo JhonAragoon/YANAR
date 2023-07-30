@@ -37,9 +37,15 @@ function showLoginForm() {
   registerForm.style.display = 'none';
 }
 
-// Event listeners para los botones de inicio de sesión y registro
+function cerrarSesion() {
+  // Simplemente redirige al usuario de vuelta a la página de inicio de sesión (index.html)
+  window.location.href = 'index.html';
+}
+
+// Event listeners para los botones de inicio de sesión, registro y cerrar sesión
 var loginButton = document.querySelector('#login-form button[type="button"]');
 var registerButton = document.querySelector('.register-form button[type="button"]');
+var logoutButton = document.querySelector('#logout-button');
 
 if (loginButton) {
   loginButton.addEventListener('click', simulateLogin);
@@ -47,4 +53,8 @@ if (loginButton) {
 
 if (registerButton) {
   registerButton.addEventListener('click', simulateRegistration);
+}
+
+if (logoutButton) {
+  logoutButton.addEventListener('click', cerrarSesion);
 }
