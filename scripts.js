@@ -7,7 +7,8 @@ function simulateLogin() {
   // Simulación de verificación de credenciales
   if (username === 'usuario' && password === 'contraseña') {
     alert('Inicio de sesión exitoso.');
-    // Aquí podrías redirigir al usuario a otra página después del inicio de sesión exitoso
+    // Redirigir al usuario a la página "inicio.html" después del inicio de sesión exitoso
+    window.location.href = 'inicio.html';
   } else {
     alert('Usuario o contraseña incorrectos. Por favor, intenta nuevamente.');
   }
