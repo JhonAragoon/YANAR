@@ -106,3 +106,20 @@ button:hover {
   text-decoration: underline;
   cursor: pointer;
 }
+
+/* Animación de bienvenida */
+.welcome-message {
+  font-size: 48px;
+  font-weight: bold;
+  animation: fadeInOut 3s ease-in-out;
+  display: none; /* Ocultar inicialmente */
+}
+
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
