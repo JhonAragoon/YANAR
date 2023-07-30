@@ -3,22 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Página Principal</title>
+  <title>Bienvenido</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="welcome-animation" id="welcomeAnimation">
-    <h1>Bienvenido</h1>
-  </div>
-
-  <div class="categories">
-    <ul>
-      <li><a href="#">Inicio</a></li>
-      <li><a href="#">Tendencias</a></li>
-      <li><a href="#">Categoría 1</a></li>
-      <li><a href="#">Categoría 2</a></li>
-      <li><a href="#">Categoría 3</a></li>
-    </ul>
+  <div class="container">
+    <div class="welcome-message">¡Bienvenido!</div>
+    <div class="categories">
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Tendencias</a></li>
+        <li><a href="#">Categoría 1</a></li>
+        <li><a href="#">Categoría 2</a></li>
+        <li><a href="#">Categoría 3</a></li>
+        <!-- Puedes agregar más categorías aquí -->
+      </ul>
+    </div>
+    <button onclick="simulateLogout()">Cerrar Sesión</button>
   </div>
 
   <script src="scripts.js"></script>
